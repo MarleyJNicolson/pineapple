@@ -1,0 +1,55 @@
+.task-card{
+    padding: 5px 10px;
+    border-radius: 5px;
+    width: -moz-min-content;
+    width: 100%;
+    margin-bottom: 5px;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.5607843137);
+    cursor: pointer;
+    padding-right: 30px;
+    overflow-wrap: break-word;
+    display: flex;
+    vertical-align: middle;
+    align-items: center;
+    p{
+        width: 100%;
+        font-size: 12px;
+        text-wrap: wrap;
+        overflow-wrap: break-word;
+    }
+    svg{
+        position: absolute;
+        right: 7px;
+        width: 13px;
+    }
+}
+.task-card.added{
+    width: max-content;
+    margin-right: 10px;
+    height: min-content;
+    padding-right: 10px;
+}
+.task-card-1{
+    background-color: #AEEEFC;
+}
+.task-card-2{
+    background-color: #64DAF4;
+}
+.task-card-3{
+    background-color: #85ED96;
+}
+.task-card-5{
+    background-color: #36DF3D;
+}
+.task-card-8{
+    background-color: #F29E22;
+}
+.task-card-13{
+    background-color: #E84545;
+    color:#fff;
+}
+.task-card-21{
+    background-color: #2C2643;
+    color:#fff;
+}

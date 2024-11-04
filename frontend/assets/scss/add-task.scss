@@ -1,0 +1,29 @@
+.add-task{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #00000075;
+    padding: 5px;
+    svg{
+        margin-right: 5px;
+        cursor: pointer;
+        path{
+            fill: #fff;
+        }
+    }
+    input{
+        box-shadow: none;
+        border: solid 1px rgb(255 255 255);
+        color:#fff;
+        width: 95%;
+    }
+    .hide-input{
+        width: 0%;
+        overflow: hidden;
+        display: flex;
+        flex-direction: row;
+        &.active{
+            width: 100%;
+        }
+    }
+}

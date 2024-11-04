@@ -1,0 +1,123 @@
+.dashboard{
+    width: 100%;
+    height: 100vh;
+}
+.selection-stepper{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    padding: 30px 30px;
+    border-bottom: solid 1px #eee;
+    &__item{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 20px;
+        .dropdown{
+            // border: solid 1px #010203;
+            min-width: 175px;
+            button{
+                width: 100%;
+                padding-right: 30px;
+            }
+            .i-heroicons-chevron-down-20-solid{
+                float: right;
+                right: 5px;
+                position: absolute;
+            }
+        }
+        .option{
+            margin-right: 20px;
+        }
+        .option-row{
+            display: flex;
+            justify-content: row;
+            button{
+                height: 32px;
+                margin-top: 24px;
+                margin-left: 20px;
+            }
+        }
+    }
+}
+
+.project-container{
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px 30px;
+    .project-list{
+        width: 100%;
+        &__item{
+            padding: 20px 0px;
+            border-bottom: solid 1px grey;
+            display: flex;
+            justify-content: row;
+            position: relative;
+            button{
+                position: absolute;
+                right: 0px;
+            }
+            a{
+                margin-left: 20px;
+            }
+        }
+    }
+    input{
+        max-width: 200px;
+        width: 100%;
+    }
+    button{
+        margin-left: 10px;
+    }
+    .add-client{
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+
+.task-board{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: calc(100vh - 360px);
+    justify-content: space-between;
+    &__column{
+        width: 14%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__column-scroll{
+        overflow-x: scroll;
+        width: 100%;
+        height: 100%;
+        top:0px;
+        padding: 10px;
+    }
+    &__column:nth-of-type(1){
+        background-color: #AEEEFC;
+    }
+    &__column:nth-of-type(2){
+        background-color: #64DAF4;
+    }
+    &__column:nth-of-type(3){
+        background-color: #85ED96;
+    }
+    &__column:nth-of-type(4){
+        background-color: #36DF3D;
+    }
+    &__column:nth-of-type(5){
+        background-color: #F29E22;
+    }
+    &__column:nth-of-type(6){
+        background-color: #E84545;
+    }
+    &__column:nth-of-type(7){
+        background-color: #2C2643;
+    }
+}
+

@@ -1,0 +1,80 @@
+.results-container{
+    width: 800px;
+    .results{
+        margin-bottom: 5px;
+    }
+    h3{
+        font-weight: bold;
+        text-decoration: underline;
+    }
+}
+.selection-stepper{
+    display: flex;
+    flex-direction: row;
+    height: 360px;
+    justify-content: space-between;
+    h1{
+        font-size: 30px;
+    }
+    span{
+        font-weight: bold;
+    }
+}
+.selection-stepper__left{
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+.points{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.points-item{
+    width: 14%;
+    p span{
+        font-size: 30px;
+    }
+}
+.added-task{
+    max-width: 500px;
+    width: 33%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow-x: scroll;
+    height: 330px;
+    align-content: flex-start;
+}
+.option-col{
+    padding:0px 23px;
+    border-right: solid 1px #80808052;
+    border-left: solid 1px #80808052;
+}
+.results-container{
+    display: flex;
+    flex-direction: row;
+    width: 350px;
+    padding-left: 20px;
+    .results-avg{
+        margin-left: 20px;
+        h3{
+            font-size: 30px;
+            margin-bottom: 7px;
+        }
+        p{
+            font-size: 25px;
+            margin-bottom: 5px;
+        }
+    }
+    &__col{
+        display: flex;
+        flex-direction: column;
+    }
+}
+.hourly-rate{
+    margin-bottom: 20px;
+    input{
+        width: 50px;
+    }
+}
