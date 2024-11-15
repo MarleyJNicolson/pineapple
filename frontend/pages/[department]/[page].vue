@@ -171,7 +171,7 @@ async function fetchServices() {
       throw new Error("Network response was not ok");
     }
 
-    let serviceData = await response.json(); // Parse the JSON of the response
+    let serviceData = await response.json(); 
     items.value = [];
     console.log("dasdsta", serviceData);
     serviceData.data.forEach((element) => {
@@ -204,12 +204,12 @@ async function createNewService() {
     if (!response.ok) {
       throw new Error("Network response was not ok");
     }
-    // Optionally, handle response data here
+  
     fetchServices();
     console.log("Department created successfully");
   } catch (error) {
     console.error("There was a problem with your fetch operation:", error);
-    return; // Exit the function if there's an error
+    return; 
   }
 }
 
@@ -232,7 +232,7 @@ async function fetchTasks() {
     if (!response.ok) {
       throw new Error("Network response was not ok");
     }
-    const data = await response.json(); // Parse the JSON of the response
+    const data = await response.json(); 
     // alert( selectedServiceID.value );
     console.log(data);
     tasks.value = [];
@@ -290,7 +290,7 @@ async function saveCalculation(item) {
         
         result[`${key}`] = {}
         
-        // Iterate through the keys of the item object
+        
         Object.entries(item).forEach(([itemKey, itemValue]) => {
           result[`${key}`][`${itemKey}`] = itemValue;
         });
@@ -406,7 +406,7 @@ function convertWorkingHours(hours) {
 
   workDays = Math.floor(workDays);
 
-  // Result
+ 
   return { months, weeks, days: workDays };
 }
 

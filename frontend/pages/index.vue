@@ -25,7 +25,7 @@ import { urlStore } from '~/store/urlStore';
             throw new Error('Network response was not ok');
         }
 
-        const data = await response.json(); // Parse the JSON of the response
+        const data = await response.json(); 
         items.value = [];
         data.data.forEach(element => {
             console.log('elm',element);
@@ -52,13 +52,13 @@ import { urlStore } from '~/store/urlStore';
             if (!response.ok) {
                 throw new Error('Network response was not ok');
             }
-            // Optionally, handle response data here
+          
             console.log("Department created successfully");
         } catch (error) {
             console.error('There was a problem with your fetch operation:', error);
-            return; // Exit the function if there's an error
+            return; 
         }
-        // Call fetchDepartments after the department creation succeeds
+    
         await fetchDepartments();
         selectedDepartment.value = newDepartment.value;
     };
@@ -76,12 +76,12 @@ import { urlStore } from '~/store/urlStore';
             if (!response.ok) {
                 throw new Error('Network response was not ok');
             }
-            // Optionally, handle response data here
+           
             await fetchProjects();
             console.log("Department created successfully");
         } catch (error) {
             console.error('There was a problem with your fetch operation:', error);
-            return; // Exit the function if there's an error
+            return; 
         }
     }
 
@@ -98,7 +98,7 @@ import { urlStore } from '~/store/urlStore';
             throw new Error('Network response was not ok');
         }
 
-        const data = await response.json(); // Parse the JSON of the response
+        const data = await response.json(); 
         projectsList.value = [];
         data.data.forEach(element => {
             projectsList.value.push({ name: element.attributes.name, dep: element.attributes.isDepartment });
